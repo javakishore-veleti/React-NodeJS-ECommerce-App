@@ -1,11 +1,11 @@
-const { response } = require('express');
-const express = require('express');
-const products = require('./data/products');
-const dotenv = require('dotenv');
-const app = express();
+import dotenv from 'dotenv';
+import express from 'express';
+import products from './data/products.js';
 
 dotenv.config();
 const BACKEND_PORT = process.env.BACKEND_PORT;
+
+const app = express();
 
 app.get('/', (req,res) => {
     res.send('API is running');
