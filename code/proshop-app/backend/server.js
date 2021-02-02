@@ -1,10 +1,13 @@
 import dotenv from 'dotenv';
 import express from 'express';
+import connectDB from './config/db.js';
 import products from './data/products.js';
+import colors from 'colors';
 
 dotenv.config();
-const BACKEND_PORT = process.env.BACKEND_PORT;
+connectDB()
 
+const BACKEND_PORT = process.env.BACKEND_PORT;
 const app = express();
 
 app.get('/', (req,res) => {
