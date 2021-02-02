@@ -3,9 +3,9 @@
 const Footer = () => {
 
     return (
-        <div>
-            Footer
-        </div>
+        <footer className="footer bg-primary" >
+            <p>&copy; Copyright All Rights Reserverd  {new Date().getFullYear()}</p>
+        </footer>
     );
 }
 

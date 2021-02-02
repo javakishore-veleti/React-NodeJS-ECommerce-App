@@ -1,11 +1,12 @@
 
+import AppNavBar from './NavBar';
 
 const Header = () => {
 
     return (
-        <div>
-            Header
-        </div>
+        <>
+         <AppNavBar></AppNavBar>   
+        </>
 
     );
 }
