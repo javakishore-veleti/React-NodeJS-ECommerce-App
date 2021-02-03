@@ -1,7 +1,9 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import SigInSchmea from '../validatioins/SignInValidation';
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import '../styles/aas.css';
 
+// https://stackoverflow.com/questions/49522347/yup-validation-with-two-fields-related
 const SignIn = () => {
 
     const initialValues = {
@@ -9,8 +11,9 @@ const SignIn = () => {
         password: ""
       };
 
-    const handleSubmit = (values) => {
-        console.log("handleSubmit ", values);
+    const handleSubmit = (values, actions) => {
+        console.log("handleSubmit ", values.email);
+        actions.setSubmitting(false);
     }
 
     return (

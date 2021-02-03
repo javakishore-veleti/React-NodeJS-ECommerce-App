@@ -1,4 +1,5 @@
 import { Container } from 'react-bootstrap';
+import '../styles/aas.css';
 
 const SignUp = () => {
 
@@ -24,7 +25,7 @@ const SignUp = () => {
                             <label>Last Name</label>
                             <input type="text" className="form-control" placehlder="Last Name" />
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        <button type="submit" className="btn btn-primary btn-block">Submit</button>
                     </form>
                 </div>
             </Container>
