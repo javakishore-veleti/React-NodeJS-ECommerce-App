@@ -3,6 +3,7 @@ import express from 'express';
 
 // https://blog.logrocket.com/typescript-with-node-js-and-express/
 // https://medium.com/better-programming/node-js-vs-spring-boot-which-should-you-choose-2366c2f76587
+// https://github.com/santiq/bulletproof-nodejs
 
 require('dotenv').config();
 
