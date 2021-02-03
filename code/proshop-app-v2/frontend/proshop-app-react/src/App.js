@@ -2,6 +2,9 @@ import './App.css';
 import Header from './modules/shared/layout/Header';
 import { BrowserRouter } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import DashboardRouteConfig  from './modules/dashboard/DashboardRouting';
+import ProjectsRouting from './modules/projects/ProjectsRouting';
+import AdministrationRouting from './modules/administration/AdministrationRouting';
 
 const App = () => {
   return (
@@ -11,7 +14,9 @@ const App = () => {
       <main>
         <Container>
           <div className="content">
-            <h1>Welcome!</h1>
+            <DashboardRouteConfig></DashboardRouteConfig>
+            <ProjectsRouting></ProjectsRouting>
+            <AdministrationRouting></AdministrationRouting>
           </div>
       </Container>
       </main>

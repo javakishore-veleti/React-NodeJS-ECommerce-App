@@ -1,6 +1,6 @@
 
 import { Navbar, Nav, NavItem, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignInAlt, faRegistered, faHome, faProjectDiagram, faToolbox, faTable, faTachometerAlt } from '@fortawesome/free-solid-svg-icons'
 
@@ -16,13 +16,13 @@ const AppNavBar = () => {
                     <Container>
                         <Navbar.Brand href="#home">Pipelines</Navbar.Brand>
                         <Nav className="mr-auto">
-                            <NavItem><Link className="nav-link" to="/"><FontAwesomeIcon icon={faHome} /> Home</Link></NavItem>
-                            <NavItem><Link className="nav-link" to="/dashboard"><FontAwesomeIcon icon={faTachometerAlt} /> Dashboard</Link></NavItem>
-                            <NavItem><Link className="nav-link" to="/projects"><FontAwesomeIcon icon={faProjectDiagram} /> Projects</Link></NavItem>
-                            <NavItem><Link className="nav-link" to="/administration"><FontAwesomeIcon icon={faToolbox} /> Administration</Link></NavItem>
-                            <NavItem><Link className="nav-link" to="/dataconnections"><FontAwesomeIcon icon={faTable} /> Data Connections</Link></NavItem>
-                            <NavItem><Link className="nav-link" to="/signup"><FontAwesomeIcon icon={faRegistered} /> Sign Up</Link></NavItem>
-                            <NavItem><Link className="nav-link" to="/signin"><FontAwesomeIcon icon={faSignInAlt} /> Sign In</Link></NavItem>
+                            <NavLink activeClassName="active" className="nav-link" to="/"><FontAwesomeIcon icon={faHome} /> Home</NavLink>
+                            <NavLink activeClassName="active" className="nav-link" to="/dashboard"><FontAwesomeIcon icon={faTachometerAlt} /> Dashboard</NavLink>
+                            <NavLink activeClassName="active" className="nav-link" to="/projects"><FontAwesomeIcon icon={faProjectDiagram} /> Projects</NavLink>
+                            <NavLink activeClassName="active" className="nav-link" to="/administration"><FontAwesomeIcon icon={faToolbox} /> Administration</NavLink>
+                            <NavLink activeClassName="active" className="nav-link" to="/datapipelines"><FontAwesomeIcon icon={faTable} /> Data Pipelines</NavLink>
+                            <NavLink activeClassName="active" className="nav-link" to="/signup"><FontAwesomeIcon icon={faRegistered} /> Sign Up</NavLink>
+                            <NavLink activeClassName="active" className="nav-link" to="/signin"><FontAwesomeIcon icon={faSignInAlt} /> Sign In</NavLink>
                         </Nav>
                     </Container>
                 </Navbar>
