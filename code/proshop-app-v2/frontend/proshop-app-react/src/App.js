@@ -5,6 +5,8 @@ import { Container } from 'react-bootstrap';
 import DashboardRouteConfig  from './modules/dashboard/DashboardRouting';
 import ProjectsRouting from './modules/projects/ProjectsRouting';
 import AdministrationRouting from './modules/administration/AdministrationRouting';
+import AASRouting from './modules/aas/AASRouting';
+
 
 const App = () => {
   return (
@@ -17,6 +19,7 @@ const App = () => {
             <DashboardRouteConfig></DashboardRouteConfig>
             <ProjectsRouting></ProjectsRouting>
             <AdministrationRouting></AdministrationRouting>
+            <AASRouting></AASRouting>
           </div>
       </Container>
       </main>
