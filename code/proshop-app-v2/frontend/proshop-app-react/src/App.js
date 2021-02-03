@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './modules/shared/layout/Header';
-import { BrowserRouter, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import DashboardRouteConfig  from './modules/dashboard/DashboardRouting';
 import ProjectsRouting from './modules/projects/ProjectsRouting';

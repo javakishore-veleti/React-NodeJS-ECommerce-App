@@ -3,9 +3,14 @@ import {Route, Redirect} from 'react-router-dom';
 
 const AuthRoutes = ({ component: Component, ...rest }) => (
     <Route {...rest} render={(props) => (
-        !(localStorage.getItem("token") && localStorage.getItem("user"))
-            ? <Component {...props} />
-            : <Redirect to='/admin/index' />
+        !(localStorage.getItem("piplelinestoken") && localStorage.getItem("piplelinesuser"))
+            ? 
+            <div className="auth-wrapper">
+                <div className="auth-inner">
+                    <Component {...props} />
+                </div>
+            </div>
+            : <Redirect to='/' />
     )} />
 );
 
