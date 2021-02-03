@@ -10,4 +10,24 @@ npm install -D typescript ts-node nodemon
 
 npm install express cors mysql mysqljs/mysql http dotenv node
 
+npm install swagger-ui-express class-validator@^0.12.2 class-transformer@^0.2.3
+
+npm install --save yamljs
+
+npm i swagger-ui-express swagger-jsdoc
+
+npm i express-swagger-generator --save-dev
+
+npm install --dev-save @types/dotenv
+
+npm install openapi-types
+
 touch tsconfig.json
+
+# https://blog.morizyun.com/javascript/library-typescript-dotenv-environment-variable.html
+touch .env # for common configuration
+touch .env.development # for dev configuration
+touch .env.test # for test configuration
+
+
+
