@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import SigInSchmea from '../validatioins/SignInValidation';
+import { SigInSchmea } from '../validatioins/SignInValidation';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import '../styles/aas.css';
 
