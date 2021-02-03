@@ -1,6 +1,6 @@
 
-import { Navbar, Nav, NavItem, Container } from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignInAlt, faRegistered, faHome, faProjectDiagram, faToolbox, faTable, faTachometerAlt } from '@fortawesome/free-solid-svg-icons'
 
